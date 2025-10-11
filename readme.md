@@ -88,7 +88,6 @@ docker run -p 3000:3000 afilmory
 或者使用 Docker Compose:
 
 ```yaml
-version: '3.8'
 services:
   afilmory:
     build: .
