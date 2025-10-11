@@ -1,6 +1,6 @@
-# Iris Photo Gallery Docker 部署
+# Afilmory Docker 部署
 
-一个基于 Docker 的 [Iris Photo Gallery](https://github.com/Iris-Photo-Gallery/iris) 部署方案，让您能够快速部署现代化的照片画廊网站。
+一个基于 Docker 的 [Afilmory](https://github.com/Afilmory/Afilmory) 部署方案，让您能够快速部署现代化的照片画廊网站。
 
 ## 🚀 快速开始
 
@@ -76,13 +76,13 @@ GIT_TOKEN=
 ### 2. 构建 Docker 镜像
 
 ```bash
-docker build -t iris-gallery .
+docker build -t afilmory .
 ```
 
 ### 3. 运行容器
 
 ```bash
-docker run -p 3000:3000 iris-gallery
+docker run -p 3000:3000 afilmory
 ```
 
 或者使用 Docker Compose:
@@ -90,7 +90,7 @@ docker run -p 3000:3000 iris-gallery
 ```yaml
 version: '3.8'
 services:
-  iris-gallery:
+  afilmory:
     build: .
     ports:
       - '3000:3000'
