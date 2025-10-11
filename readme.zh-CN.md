@@ -1,5 +1,12 @@
 # Afilmory Docker 部署
 
+<p align="center">
+  🌐
+  <a href="readme.md">English</a>
+  ·
+  <a href="readme.zh-CN.md">简体中文</a>
+</p>
+
 一个基于 Docker 的 [Afilmory](https://github.com/Afilmory/Afilmory) 部署方案，让您能够快速部署现代化的照片画廊网站。
 
 ## 🚀 快速开始
