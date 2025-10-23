@@ -63,29 +63,31 @@
 
 - S3 存储配置
 
-```
+```env
 S3_ACCESS_KEY_ID=your_access_key_id
 S3_SECRET_ACCESS_KEY=your_secret_access_key
 ```
 
 - PG (可选)
 
-```
+```env
 PG_CONNECTION_STRING=
 ```
 
 - GIT （可选）
 
-```
+```env
 GIT_TOKEN=
 ```
 
 ### 2. 构建 Docker 镜像
 
 > 大陆服务器可能会遇到 Alpine 内部安装 Perl 失败，打包失败的情况，可在 apk update 命令前插入下属指令，替换源
-> ```
+>
+> ```bash
 > sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 > ```
+>
 > 之后再继续执行 build 指令
 
 ```bash
@@ -113,7 +115,6 @@ services:
       - ./builder.config.json:/app/builder.config.json
       - ./.env:/app/.env
 ```
-
 
 ## 📄 许可证
 
