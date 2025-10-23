@@ -82,12 +82,6 @@ GIT_TOKEN=
 
 ### 2. Build Docker Image
 
-> 大陆服务器可能会遇到 Alpine 内部安装 Perl 失败，打包失败的情况，可在 apk update 命令前插入下属指令，替换源
-> ```
-> sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
-> ```
-> 之后再继续执行 build 指令
-
 ```bash
 docker build -t afilmory .
 ```
