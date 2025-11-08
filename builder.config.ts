@@ -10,6 +10,7 @@ export default defineBuilderConfig(() => ({
     // Storage configuration
     provider: 's3',
     bucket: 'your-photos-bucket',
+    endpoint: 'your-s3-endpoint',
     region: 'us-east-1',
     prefix: 'photos/',
     customDomain: 'cdn.yourdomain.com',
